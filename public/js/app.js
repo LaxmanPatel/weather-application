@@ -18,7 +18,7 @@ form.addEventListener("submit", (e) => {
     result2.textContent = "";
     console.log(address);
     e.preventDefault();
-    fetch(`http://localhost:3000/weather?search=${encodeURIComponent(address)}`)
+    fetch(`/weather?search=${encodeURIComponent(address)}`)
         .then((data) => data.json())
         .then(res => {
             console.log(res);
