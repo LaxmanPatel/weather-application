@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/style.css" />
+ 
+</head>
+<body>
+    {{>header}}
+    <h1>Hey we are weather forcaster</h1>
+    <form>
+        <label>Search : </label>
+        <input id="search" type="text" placeholder="Location"/>
+        <button type="submit">Search</button>
+    </form>
+    <div>
+        <label>Result</label>
+        <p id="location"></p>
+        <p id="forecast-1"></p>
+        <p id="forecast-2"></p>
+    </div>
+    {{>footer}}
+       <script src="/js/app.js"></script>
+</body>
+</html>
